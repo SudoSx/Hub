@@ -1,4 +1,4 @@
---/ Whitelist fur luca
+--/ Whitelist
 local blacklist_userid = {}
 
 for i,id in pairs(blacklist_userid) do

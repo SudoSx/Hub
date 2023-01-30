@@ -18,6 +18,14 @@ elseif game.PlaceId == 10427037408 then --/ Life Sentence/Prison Sentence
     });
 
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/lifesen.lua"),true))()
+elseif game.PlaceId == 10784373080 then --/ RAYS! (FPS)
+    Notify({
+        Description = "Loading RAYS! (FPS).";
+        Title = "Game Found!";
+        Duration = 5;
+    });
+
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/lifesen.lua"),true))()
 else --/ If no game was found
     Notify({
         Description = "Game is not supported.";
@@ -25,3 +33,4 @@ else --/ If no game was found
         Duration = 5;
     });
 end
+

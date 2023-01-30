@@ -25,7 +25,7 @@ elseif game.PlaceId == 10784373080 then --/ RAYS! (FPS)
         Duration = 5;
     });
 
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/lifesen.lua"),true))()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/rays-fps.lua"),true))()
 else --/ If no game was found
     Notify({
         Description = "Game is not supported.";

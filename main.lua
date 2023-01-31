@@ -10,9 +10,9 @@ if game.PlaceId == 3214114884 then --/ Flag Wars
     });
     
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/FlagWars.lua"),true))()
-elseif game.PlaceId == 10427037408 then --/ Life Sentence/Prison Sentence
+elseif game.PlaceId == 10427037408 then --/ Life Sentence
     Notify({
-        Description = "Loading Life Sentence/Prison Sentence.";
+        Description = "Loading Life Sentence.";
         Title = "Game Found!";
         Duration = 5;
     });
@@ -26,6 +26,14 @@ elseif game.PlaceId == 10784373080 then --/ RAYS! (FPS)
     });
 
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/rays-fps.lua"),true))()
+elseif game.PlaceId == 4738545896 then --/ SHOOT OUT!
+    Notify({
+        Description = "Loading SHOOT OUT!.";
+        Title = "Game Found!";
+        Duration = 5;
+    });
+
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/SHOOT-OUT.lua"),true))()
 else --/ If no game was found
     Notify({
         Description = "Game is not supported.";
@@ -33,4 +41,3 @@ else --/ If no game was found
         Duration = 5;
     });
 end
-

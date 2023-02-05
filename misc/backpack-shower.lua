@@ -91,7 +91,7 @@ UIStroke_1.LineJoinMode = "Miter"
 local player = game:GetService("Players").LocalPlayer
 local mouse = player:GetMouse()
 
-local blacklist = {"Fists","Gear","Blade","Spring","Cola","Bagel","Burger","Water","Milk","Orange Juice"}
+local blacklist = {"Fists","Gear","Blade","Spring","Cola","Bagel","Burger","Water","Milk","Orange Juice","Chicken"}
 
 mouse.Move:Connect(function()
     if not mouse.Target then 

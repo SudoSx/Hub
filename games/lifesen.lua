@@ -482,31 +482,12 @@ function antiStomp()
 end
 
 
-function deleteDoors()
-    for i,door in pairs(game:GetService("Workspace").Doors:GetDescendants()) do
-        for i,part in pairs(door:GetDescendants()) do
-            if part.ClassName == "Part" or part.ClassName == "UnionOperation" and part.Transparency ~= makeDoorsNotCollideTransparency then
-                part:Destroy()
-            end
-        end
+local function deleteDoors()
+    for i,v in pairs(game.Workspace:FindFirstChild("Doors"):GetChildren()) do
+        v:Destroy()
     end
-
-    --/ Solitary Doors
-    for i,door in pairs(game:GetService("Workspace").SolitaryCellDoors:GetDescendants()) do
-        door:Destroy()
-    end
-
-    for i,part in pairs(game:GetService("Workspace").CellRoomDoor1:GetDescendants()) do 
-        if part.ClassName == "Part" or part.ClassName == "UnionOperation" and part.Transparency ~= makeDoorsNotCollideTransparency then
-            part:Destroy()
-        end
-    end
-
-    for i,part in pairs(game:GetService("Workspace").CellRoomDoor2:GetDescendants()) do 
-        if part.ClassName == "Part" or part.ClassName == "UnionOperation" and part.Transparency ~= makeDoorsNotCollideTransparency then
-            part:Destroy()
-        end
-    end
+    game.Workspace:FindFirstChild("CellRoomDoor1"):Destroy()
+    game.Workspace:FindFirstChild("CellRoomDoor2"):Destroy()
 end
 
 local autoStrengthActive = false

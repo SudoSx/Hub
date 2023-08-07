@@ -488,6 +488,7 @@ local function deleteDoors()
     end
     game.Workspace:FindFirstChild("CellRoomDoor1"):Destroy()
     game.Workspace:FindFirstChild("CellRoomDoor2"):Destroy()
+    game.Workspace:FindFirstChild("Ignore"):Destroy()
 end
 
 local autoStrengthActive = false

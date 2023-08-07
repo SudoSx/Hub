@@ -10,7 +10,7 @@ if game.PlaceId == 3214114884 then --/ Flag Wars
     });
     
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/SudoSx/Hub/main/games/FlagWars.lua"),true))()
-elseif game.PlaceId == 10427037408 then --/ Life Sentence
+elseif game.PlaceId == 13083893317 then --/ Life Sentence
     Notify({
         Description = "Loading Life Sentence.";
         Title = "Game Found!";
